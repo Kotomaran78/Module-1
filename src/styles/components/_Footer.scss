@@ -1,0 +1,70 @@
+.footer {
+  background: $color-background-footer;
+  padding: 20px;
+  margin-top: 80px;
+
+  &__container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__logo {
+    width: 150px;
+  }
+
+  &__contact {
+    text-align: right;
+  }
+
+  &__contact-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: $color-contact-title;
+    margin-bottom: 10px;
+  }
+
+  &__contact-email {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-contact-email;
+  }
+
+  &__nav {
+    margin-bottom: 20px;
+  }
+  &__navList {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 10px 30px 0 0;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 5px;
+
+      a {
+        color: $color-nav-link;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__divider {
+    border: 0;
+    border-top: 2px solid $color-divider;
+    margin-bottom: 20px;
+  }
+
+  &__cookies {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-cookies;
+  }
+}

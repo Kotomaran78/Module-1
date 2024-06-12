@@ -1,0 +1,73 @@
+.subscription-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-accent;
+    margin-bottom: 10px;
+  }
+
+  &__title2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $color-title;
+    margin-bottom: 20px;
+  }
+
+  &__title3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: $color-title;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: $text-color-light;
+  }
+  &__input {
+    background: $text-color-light;
+    color: $color-secondary;
+    font-family: $font-nunito;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: 0px;
+    outline: none;
+    margin-right: 10px;
+    max-width: 100%;
+    background-image: url("../../img/SubscriptionSection/email.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 50px;
+
+    &::placeholder {
+      color: $color-placeholder;
+    }
+  }
+
+  &__button {
+    border-radius: 20px;
+    background: $color-secondary-button;
+    color: $color-background;
+    font-family: $font-nunito;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 15px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 10px;
+    }
+  }
+}
