@@ -1,0 +1,27 @@
+@import "normalize.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+$font-ubuntu: "Ubuntu", sans-serif;
+
+$background-color-body: #f5f4ff;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-ubuntu;
+  background-color: $background-color-body;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+main {
+  flex: 1;
+}
