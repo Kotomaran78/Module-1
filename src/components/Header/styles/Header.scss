@@ -1,0 +1,123 @@
+@import "./variables";
+
+.header {
+  width: 100%;
+  padding: 10px 0;
+
+  &__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-logo-header;
+    text-decoration: none;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-weight: 700;
+    color: $text-color-header;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color-header;
+    margin: 0 15px;
+  }
+
+  &__nav-button {
+    display: none;
+  }
+
+  &__button {
+    background-color: $color-primary-button;
+    color: $text-color-light;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+
+    &:hover {
+      background-color: $color-secondary-hover;
+    }
+  }
+
+  &__burger {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 920px) {
+  .header {
+    font-size: 0.875rem;
+
+    &__nav {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 200px;
+      border-radius: 15px;
+
+      &--open {
+        display: flex;
+      }
+    }
+
+    &__link {
+      margin: 10px 0;
+    }
+
+    &__nav-button {
+      display: block;
+      background-color: $color-primary-button;
+      color: $text-color-light;
+      border: none;
+      padding: 16px;
+      border-radius: 16px;
+      cursor: pointer;
+      font-weight: 700;
+      text-align: center;
+      margin: 10px 0;
+
+      &:hover {
+        background-color: $color-secondary-hover;
+      }
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 0.75rem;
+
+    &__button {
+      margin-top: 10px;
+    }
+  }
+}
