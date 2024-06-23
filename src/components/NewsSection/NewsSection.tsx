@@ -1,6 +1,6 @@
 import React from "react";
 import NewsSlider from "./NewsSlider";
-import "./styles/NewsSection.scss";
+import "./NewsSection.scss";
 
 const NewsSection: React.FC = () => {
   return (

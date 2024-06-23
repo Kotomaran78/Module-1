@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { Image } from "./types";
-import placeholderImage from "../../assets/img/placeholder.png";
+import placeholderImage from "@assets/img/placeholder.png";
 
 const NewsSlider: React.FC = () => {
   const [images, setImages] = useState<Image[]>([]);

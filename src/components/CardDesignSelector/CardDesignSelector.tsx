@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { cardImages } from "./constants";
-import "./styles/CardDesignSelector.scss";
+import "./CardDesignSelector.scss";
 
 const CardDesignSelector: React.FC = () => {
   return (

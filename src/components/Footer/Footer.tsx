@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo.png";
+import logo from "@assets/img/logo.png";
 import { footerLinks } from "./constants";
-import "./styles/Footer.scss";
+import "./Footer.scss";
 
 const Footer: React.FC = () => {
   return (

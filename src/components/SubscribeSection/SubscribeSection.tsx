@@ -1,6 +1,6 @@
 import React from "react";
-import subscribeIcon from "../../assets/img/sendEmail.svg";
-import "./styles/SubscribeSection.scss";
+import subscribeIcon from "@assets/img/sendEmail.svg";
+import "./SubscribeSection.scss";
 
 const SubscribeSection: React.FC = () => {
   const handleSubscribe = () => {

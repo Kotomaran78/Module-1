@@ -1,6 +1,6 @@
 import React from "react";
-import GlobalImage from "../../assets/img/HugeGlobal.png";
-import "./styles/GlobalUsageSection.scss";
+import GlobalImage from "@assets/img/HugeGlobal.png";
+import "./GlobalUsageSection.scss";
 
 const GlobalUsageSection: React.FC = () => {
   return (
