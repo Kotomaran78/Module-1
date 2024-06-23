@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { cardImages } from "./constants";
-import "./CardDesignSelector.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { cardImages } from './constants';
+import './CardDesignSelector.scss';
 
 const CardDesignSelector: React.FC = () => {
   return (
@@ -17,6 +17,7 @@ const CardDesignSelector: React.FC = () => {
       <div className="card-section__cards">
         {cardImages.map((image) => (
           <img
+            key={image}
             src={image}
             alt="Card Design"
             className="card-section__cardImage"
