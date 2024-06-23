@@ -1,6 +1,6 @@
 import React from "react";
 import { featuresList } from "./constants";
-import Illustration from "../../assets/img/Illustration2.svg";
+import Illustration from "../../assets/img/Illustration2.png";
 import CheckIcon from "../../assets/img/bx_bxs-check-circle.svg";
 import "./styles/FeatureSection.scss";
 

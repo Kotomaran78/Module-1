@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { currencies } from "./constants";
-import GroupImage from "../../assets/img/Group.svg";
+import GroupImage from "../../assets/img/Group.png";
 import { apiKey } from "./apiKey";
 import { Rate } from "./types";
 import "./styles/ExchangeRates.scss";
