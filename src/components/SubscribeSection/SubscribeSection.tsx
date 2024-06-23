@@ -1,10 +1,10 @@
-import React from "react";
-import subscribeIcon from "@assets/img/sendEmail.svg";
-import "./SubscribeSection.scss";
+import React from 'react';
+import subscribeIcon from '@assets/icons/sendEmail.svg';
+import './SubscribeSection.scss';
 
 const SubscribeSection: React.FC = () => {
   const handleSubscribe = () => {
-    alert("Подписка оформлена!");
+    alert('Подписка оформлена!');
   };
 
   return (

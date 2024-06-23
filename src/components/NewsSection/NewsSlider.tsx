@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
-import axios from "axios";
-import { Image } from "./types";
-import placeholderImage from "@assets/img/placeholder.png";
+import React, { useEffect, useState, useRef } from 'react';
+import axios from 'axios';
+import { Image } from './types';
+import placeholderImage from '@assets/img/placeholder.png';
 
 const NewsSlider: React.FC = () => {
   const [images, setImages] = useState<Image[]>([]);
@@ -12,11 +12,11 @@ const NewsSlider: React.FC = () => {
     const fetchImages = async () => {
       try {
         const response = await axios.get(
-          "https://jsonplaceholder.typicode.com/photos",
+          'https://jsonplaceholder.typicode.com/photos'
         );
         setImages(response.data.slice(0, 20));
       } catch (error) {
-        console.error("Error fetching images:", error);
+        console.error('Error fetching images:', error);
       }
     };
 
@@ -27,8 +27,8 @@ const NewsSlider: React.FC = () => {
     const handleResize = () => {
       updateSliderPosition(currentIndex);
     };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, [currentIndex]);
 
   const updateSliderPosition = (index: number) => {
@@ -61,7 +61,7 @@ const NewsSlider: React.FC = () => {
   };
 
   const handleImageError = (
-    event: React.SyntheticEvent<HTMLImageElement, Event>,
+    event: React.SyntheticEvent<HTMLImageElement, Event>
   ) => {
     event.currentTarget.src = placeholderImage;
   };
