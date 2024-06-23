@@ -1,1 +1,1 @@
-export { default } from "./ExchangeRates";
+export { default } from './ExchangeRates';

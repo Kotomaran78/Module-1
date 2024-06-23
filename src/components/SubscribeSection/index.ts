@@ -1,1 +1,1 @@
-export { default } from "./SubscribeSection";
+export { default } from './SubscribeSection';
