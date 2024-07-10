@@ -60,6 +60,7 @@ const NewsSlider: React.FC = () => {
     }
   };
 
+  
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prevIndex) => {
