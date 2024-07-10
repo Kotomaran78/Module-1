@@ -15,6 +15,7 @@ const NewsSlider: React.FC = () => {
 
   const checkImageLink = async (url: string): Promise<boolean> => {
     try {
+      console.log(url);
       const response = await axios.get(url);
       return response.status === 200;
     } catch (error) {
@@ -49,8 +50,13 @@ const NewsSlider: React.FC = () => {
 
   const updateSliderPosition = (index: number) => {
     if (sliderRef.current) {
-      const slideWidth = sliderRef.current.children[index].clientWidth + 30;
-      sliderRef.current.style.transform = `translateX(-${index * slideWidth}px)`;
+      const children = sliderRef.current.children;
+      if (children[index]) {
+        const slideWidth = children[index].clientWidth + 30;
+        sliderRef.current.style.transform = `translateX(-${index * slideWidth}px)`;
+      } else {
+        console.warn(`Element at index ${index} does not exist`);
+      }
     }
   };
 
