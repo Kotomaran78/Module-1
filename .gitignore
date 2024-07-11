@@ -1,4 +1,5 @@
 node_modules/
+package-lock.json
 
 # Файл содержит уникальный API ключ, который не должен попадать в репозиторий
 apiKey.ts
