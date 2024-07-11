@@ -1,0 +1,39 @@
+@import '@styles/variables';
+
+.credit-card-offer {
+  display: flex;
+  background: linear-gradient(to right, #f0f0f0, #ffffff);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card-detail {
+  text-align: center;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
