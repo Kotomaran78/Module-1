@@ -9,25 +9,23 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^4.2.1"
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
     "@eslint/js": "^9.6.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.98",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.3",
+    "eslint": "^9.6.0",
     "globals": "^15.6.0",
     "prettier": "^3.3.2",
     "sass": "^1.77.4",
-    "typescript": "^4.9.5",
-    "typescript-eslint": "^7.14.1"
+    "typescript": "^5.5.3"
   },
   "scripts": {
     "start": "craco start",
