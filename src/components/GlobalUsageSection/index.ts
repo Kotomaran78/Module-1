@@ -1,1 +1,1 @@
-export { default } from "./GlobalUsageSection";
+export { default } from './GlobalUsageSection';

@@ -1,7 +1,6 @@
-@import "./variables";
-@import "./NewsSlider";
+@import '@styles/variables';
 
-.news-section {
+.global-services {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,14 +18,18 @@
     font-weight: 500;
     color: $color-text-primary;
     margin-bottom: 40px;
-    max-width: 800px;
+  }
+
+  &__image img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: 920px) {
-  .news-section {
-    padding: 20px 10px;
+  .global-services {
     font-size: 0.875rem;
+    padding: 20px 10px;
 
     &__title {
       font-size: 1.625rem;
@@ -35,7 +38,7 @@
 }
 
 @media (max-width: 500px) {
-  .news-section {
+  .global-services {
     font-size: 0.75rem;
 
     &__title {
