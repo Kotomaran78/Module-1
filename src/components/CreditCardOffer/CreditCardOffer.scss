@@ -2,38 +2,111 @@
 
 .credit-card-offer {
   display: flex;
-  background: linear-gradient(to right, #f0f0f0, #ffffff);
+  background: linear-gradient(
+    180.8deg,
+    rgba(203, 213, 224, 0.624) 34.33%,
+    rgba(254, 235, 200, 0.56) 64.27%
+  );
+  box-shadow: 0px 2px 4px 0px #00000033;
+  box-shadow: 0px 0px 8px 0px #00000014;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
+
+  &___info {
+    flex: 1;
+    padding: 20px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2d3748;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  &__detail {
+    margin-right: 10px;
+    color: #3d3d3d;
+  }
+
+  &__detail strong {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__detail p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__apply-button {
+    background-color: #003cff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 25px;
+  }
+
+  &__image-display1 {
+    display: none;
+  }
 }
 
-.card-info {
-  flex: 1;
-  padding: 20px;
+@media (max-width: 920px) {
+  .credit-card-offer {
+    &__image-display1 {
+      display: flex;
+    }
+
+    &__image-display2 {
+      display: none;
+    }
+
+    &__image-img {
+      max-width: 320px;
+    }
+  }
 }
 
-.card-details {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
+@media (max-width: 500px) {
+  .credit-card-offer {
+    &__details {
+      flex-direction: column;
+    }
 
-.card-detail {
-  text-align: center;
-}
+    &__detail {
+      margin: 0 0 20px 0;
+    }
 
-.apply-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.card-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    &__detail:last-child {
+      margin: 0;
+    }
+  }
 }
