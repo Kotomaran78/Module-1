@@ -1,0 +1,26 @@
+@import '@styles/variables';
+
+.rates-and-conditions {
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  &__table td {
+    font-size: 16px;
+    font-weight: 500;
+    color: #434343;
+    padding: 25px 0;
+    text-align: left;
+    border-bottom: 1px solid #7f92ac;
+
+    &:first-child {
+      color: #000000;
+      padding-right: 10px;
+    }
+  }
+}
