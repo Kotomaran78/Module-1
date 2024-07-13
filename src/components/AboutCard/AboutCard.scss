@@ -1,0 +1,53 @@
+@import '@styles/variables';
+
+.aboutCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__item {
+    flex: 1 1 calc(33.333% - 88px);
+    background: #eaecee;
+    box-shadow: 0px 2px 4px 0px #00000033;
+    border-radius: 28px;
+    padding: 30px;
+
+    strong {
+      font-size: 30px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    &:nth-child(even) {
+      background: #7f92acb2;
+    }
+  }
+  
+  &__icon {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 920px) {
+  .aboutCard {
+    &__item {
+      flex-basis: calc(50% - 88px);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutCard {
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+}
