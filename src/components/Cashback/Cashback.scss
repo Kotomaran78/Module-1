@@ -1,0 +1,48 @@
+@import '@styles/variables';
+
+.cashback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  &__item {
+    flex: 1 1 calc(33.333% - 88px);
+    background: #eaecee;
+    box-shadow: 0px 2px 4px 0px #00000033;
+    border-radius: 28px;
+    padding: 30px;
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #434343e5;
+      margin-bottom: 20px;
+    }
+
+    strong {
+      font-size: 36px;
+      font-weight: 700;
+      color: #000000;
+    }
+
+    &:nth-child(even) {
+      background: #88b3b899;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .cashback {
+    &__item {
+      flex-basis: calc(50% - 88px);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .cashback {
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+}
