@@ -18,14 +18,23 @@ const CreditCardOffer: React.FC = () => {
           <div className='credit-card-offer__detail'>
             <strong>Up to 160 days</strong>
             <p>No percent</p>
+            <div className='credit-card-offer__detail-tooltip'>
+              When repaying the full debt up to 160 days.
+            </div>
           </div>
           <div className='credit-card-offer__detail'>
             <strong>Up to 600 000 ₽</strong>
             <p>Credit limit</p>
+            <div className='credit-card-offer__detail-tooltip'>
+              Over the limit willaccrue percent
+            </div>
           </div>
           <div className='credit-card-offer__detail'>
             <strong>0 ₽</strong>
             <p>Card service is free</p>
+            <div className='credit-card-offer__detail-tooltip'>
+              Promotion valid until December 31, 2022.
+            </div>
           </div>
         </div>
         <button className='credit-card-offer__apply-button'>Apply for card</button>
