@@ -1,0 +1,49 @@
+@import '@styles/variables';
+
+.faq {
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 32px 0;
+    color: #000000;
+  }
+
+  &__block-questions &__item:last-child {
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  &__item {
+    border: 1px solid #e2e8f0;
+    border-bottom: 0;
+  }
+
+  &__question {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1c1c1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    cursor: pointer;
+  }
+
+  &__toggle-icon {
+    font-size: 1rem;
+  }
+
+  &__answer {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7b7454;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    padding: 0 32px;
+
+    &--open {
+      max-height: 100%;
+      padding: 25px 32px;
+    }
+  }
+}
