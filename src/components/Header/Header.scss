@@ -32,6 +32,10 @@
     text-decoration: none;
     color: $text-color-header;
     margin: 0 15px;
+
+    &--active {
+      color: $color-active-link;
+    }
   }
 
   &__nav-button {
@@ -39,7 +43,7 @@
   }
 
   &__button {
-    background-color: $color-primary-button;
+    background: $color-primary-button;
     color: $text-color-light;
     border: none;
     padding: 16px;
@@ -47,9 +51,10 @@
     cursor: pointer;
     font-weight: 700;
     text-align: center;
+    transition: background 0.3s ease;
 
     &:hover {
-      background-color: $color-secondary-hover;
+      background: $color-secondary-hover;
     }
   }
 
