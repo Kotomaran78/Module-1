@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { headerLinks } from './constants';
 import './Header.scss';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,7 +19,12 @@ const Header: React.FC = () => {
         </Link>
         <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
           {headerLinks.map((link) => (
-            <Link key={link.to} className='header__link' to={link.to} onClick={toggleMenu}>
+            //onClick={toggleMenu}
+            <Link
+              key={link.to}
+              className={`header__link ${location.pathname === link.to ? 'header__link--active' : ''}`}
+              to={link.to}
+            >
               {link.label}
             </Link>
           ))}
