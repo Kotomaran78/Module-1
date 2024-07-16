@@ -1,10 +1,10 @@
 @import '@styles/variables';
 
 .card-application-form {
-  background-color: #ffffff;
+  background: $color-CardApplicationForm-background;
   padding: 32px;
   border-radius: 28px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px $color-CardApplicationForm-box-shadow;
 
   &__loader {
     text-align: center;
@@ -39,36 +39,33 @@
   }
 
   &__header-title {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
-    color: #000000;
+    color: $color-CardApplicationForm-header-title;
     margin: 0;
   }
 
   &__step-info {
-    font-size: 16px;
     font-weight: 500;
-    color: #000000;
+    color: $color-CardApplicationForm-step-info;
   }
 
   &__section-slider {
-    border: 1px solid #5b35d5;
+    border: 1px solid $color-CardApplicationForm-section-slider-border;
     padding: 20px;
     border-radius: 10px;
     position: relative;
   }
 
   &__slider-title {
-    font-size: 16px;
     font-weight: 500;
-    color: #000000;
+    color: $color-CardApplicationForm-slider-title;
     margin-bottom: 20px;
   }
 
   &__amount-value {
-    font-size: 16px;
     font-weight: 500;
-    color: #000000;
+    color: $color-CardApplicationForm-amount-value;
     margin-bottom: 10px;
   }
 
@@ -76,33 +73,33 @@
     width: 100%;
   }
 
-  &__slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 24px;
-    height: 24px;
-    background: #5b35d5;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
-  }
+  // &__slider::-webkit-slider-thumb {
+  //   -webkit-appearance: none;
+  //   appearance: none;
+  //   width: 24px;
+  //   height: 24px;
+  //   background: $color-CardApplicationForm-slider-thumb;
+  //   cursor: pointer;
+  //   border-radius: 50%;
+  //   border: none;
+  // }
 
-  &__slider::-moz-range-thumb {
-    width: 24px;
-    height: 24px;
-    background: #5b35d5;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
-  }
+  // &__slider::-moz-range-thumb {
+  //   width: 24px;
+  //   height: 24px;
+  //   background: $color-CardApplicationForm-slider-thumb;
+  //   cursor: pointer;
+  //   border-radius: 50%;
+  //   border: none;
+  // }
 
-  &__slider::-webkit-slider-runnable-track {
-    background: #5b35d5;
-  }
+  // &__slider::-webkit-slider-runnable-track {
+  //   background: $color-CardApplicationForm-slider-track;
+  // }
 
-  &__slider::-moz-range-track {
-    background: #5b35d5;
-  }
+  // &__slider::-moz-range-track {
+  //   background: $color-CardApplicationForm-slider-track;
+  // }
 
   &__slider-minmax {
     display: flex;
@@ -110,29 +107,26 @@
   }
 
   &__slider-min {
-    font-size: 16px;
     font-weight: 500;
-    color: #786d6d;
+    color: $color-CardApplicationForm-slider-min;
     margin: 0;
   }
 
   &__slider-max {
-    font-size: 16px;
     font-weight: 500;
-    color: #786d6d;
+    color: $color-CardApplicationForm-slider-max;
     margin: 0;
   }
 
   &__error {
-    font-size: 16px;
     font-weight: 500;
-    color: #ff5631;
+    color: $color-CardApplicationForm-error;
     margin-top: 5px;
   }
 
   &__divider {
     width: 1px;
-    border-left: 1px dashed #80808066;
+    border-left: 1px dashed $color-CardApplicationForm-divider-border;
     margin: 0 40px;
   }
 
@@ -141,16 +135,15 @@
   }
 
   &__amount-title {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: #000000;
+    color: $color-CardApplicationForm-amount-title;
   }
 
   &__amount-selected {
-    font-size: 16px;
     font-weight: 500;
-    color: #000000;
-    border-bottom: 1px solid #80808033;
+    color: $color-CardApplicationForm-amount-selected;
+    border-bottom: 1px solid $color-CardApplicationForm-amount-selected-border;
     padding-bottom: 10px;
     width: 35%;
   }
@@ -160,9 +153,9 @@
   }
 
   &__form-title {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: #000000;
+    color: $color-CardApplicationForm-form-title;
   }
 
   &__form {
@@ -188,28 +181,26 @@
 
   &__label {
     margin-bottom: 8px;
-    font-size: 16px;
     font-weight: 500;
-    color: #1a202c;
+    color: $color-CardApplicationForm-label;
   }
 
   &__select,
   &__input {
     padding: 13px 40px 13px 16px;
-    border: 1px solid #80808033;
+    border: 1px solid $color-CardApplicationForm-input-border;
     border-radius: 6px;
     background: #f9f5e3;
     background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: right 16px;
+    background-position: right 16px center;
 
     &:focus {
       outline: none;
-      border: 2px solid #5b35d5;
+      border: 2px solid $color-CardApplicationForm-input-border-focus;
     }
 
     &--error {
-      border: 2px solid #ff5631;
+      border: 2px solid $color-CardApplicationForm-input-border-error;
       background-image: url('../../assets/icons/Close_round_fill.svg');
     }
 
@@ -225,10 +216,9 @@
   }
 
   &__continue-button {
-    font-size: 16px;
     font-weight: 700;
-    background: #003cff;
-    color: white;
+    background: $color-CardApplicationForm-continue-button-background;
+    color: $color-CardApplicationForm-continue-button;
     padding: 15px 38px;
     border: none;
     border-radius: 8px;
@@ -236,22 +226,33 @@
     transition: background 0.3s ease;
 
     &:hover {
-      background: #7796c0;
+      background: $color-CardApplicationForm-continue-button-background-hover;
     }
   }
 }
 
 @media (max-width: 920px) {
   .card-application-form {
+    font-size: 0.875rem;
+
     &__top-content {
       flex-direction: column;
+    }
+
+    &__header-title {
+      font-size: 1.65rem;
+    }
+
+    &__amount-title,
+    &__form-title {
+      font-size: 1.1rem;
     }
 
     &__divider {
       width: auto;
       border-left: 0;
       height: 1px;
-      border-bottom: 1px dashed #80808066;
+      border-bottom: 1px dashed $color-CardApplicationForm-divider-border;
       margin: 40px 0 20px 0;
     }
 
@@ -272,6 +273,17 @@
 
 @media (max-width: 500px) {
   .card-application-form {
+    font-size: 0.75rem;
+
+    &__header-title {
+      font-size: 1.4rem;
+    }
+
+    &__amount-title,
+    &__form-title {
+      font-size: 0.95rem;
+    }
+
     &__form-group {
       flex-basis: 100%;
       min-width: 15%;

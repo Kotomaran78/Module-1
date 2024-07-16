@@ -1,6 +1,4 @@
-$font-rubik: 'Rubik', sans-serif;
-
-$font-nunito: 'Nunito Sans', sans-serif;
+@import './fonts';
 
 $color-secondary: #1c1c1e;
 $color-primary-button: #003cff;
@@ -40,4 +38,37 @@ $color-placeholder: #9092b0;
 $color-secondary-button: #686df1;
 $color-secondary-hover: #0056b3;
 
+
+
+// @components/AboutCard
+$color-AboutCard-background: #eaecee;
+$color-AboutCard-background-even: #7f92acb2;
+$color-AboutCard-box-shadow: #00000033;
+$color-AboutCard-text: #000;
+
+// @components/CardApplicationForm
+$color-CardApplicationForm-background: #fff;
+$color-CardApplicationForm-box-shadow: rgba(0, 0, 0, 0.1);
+$color-CardApplicationForm-header-title: #000;
+$color-CardApplicationForm-step-info: #000;
+$color-CardApplicationForm-section-slider-border: #5b35d5;
+$color-CardApplicationForm-slider-title: #000;
+$color-CardApplicationForm-amount-value: #000;
+$color-CardApplicationForm-slider-thumb: #5b35d5;
+$color-CardApplicationForm-slider-track: #5b35d5;
+$color-CardApplicationForm-slider-min: #786d6d;
+$color-CardApplicationForm-slider-max: #786d6d;
+$color-CardApplicationForm-error: #ff5631;
+$color-CardApplicationForm-divider-border: #80808066;
+$color-CardApplicationForm-amount-title: #000;
+$color-CardApplicationForm-amount-selected: #000;
+$color-CardApplicationForm-amount-selected-border: #80808033;
+$color-CardApplicationForm-form-title: #000;
+$color-CardApplicationForm-label: #1a202c;
+$color-CardApplicationForm-input-border: #80808033;
+$color-CardApplicationForm-input-border-focus: #5b35d5;
+$color-CardApplicationForm-input-border-error: #ff5631;
+$color-CardApplicationForm-continue-button: #fff;
+$color-CardApplicationForm-continue-button-background: #003cff;
+$color-CardApplicationForm-continue-button-background-hover: #7796c0;
 
