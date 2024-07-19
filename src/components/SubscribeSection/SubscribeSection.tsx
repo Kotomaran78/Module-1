@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FormEvent } from 'react';
 import subscribeIcon from '@assets/icons/sendEmail.svg';
 import './SubscribeSection.scss';
 
@@ -13,7 +13,9 @@ const SubscribeSection: React.FC = () => {
     }
   }, []);
 
-  const handleSubscribe = async () => {
+  const handleSubscribe = async (event: FormEvent) => {
+    event.preventDefault(); 
+
     try {
       const response = await fetch('/email', {
         method: 'POST',
