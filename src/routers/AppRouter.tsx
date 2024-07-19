@@ -13,12 +13,6 @@ const router = createBrowserRouter([
         path: '',
         element: <Home />,
       },
-    ],
-  },
-  {
-    path: '/',
-    element: <App />,
-    children: [
       {
         path: 'credit-card',
         element: <Loan />,
