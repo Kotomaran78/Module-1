@@ -9,14 +9,14 @@ import SubscribeSection from '@components/SubscribeSection';
 
 const Home: React.FC = () => {
   return (
-    <div className='home__content'>
+    <section className='home__content'>
       <CardDesignSelector />
       <FeatureSection />
       <ExchangeRates />
       <GlobalUsageSection />
       <NewsSection />
       <SubscribeSection />
-    </div>
+    </section>
   );
 };
 
