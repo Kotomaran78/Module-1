@@ -20,7 +20,6 @@ const CardApplicationForm: React.FC = () => {
   };
 
   const handleSubmit = async (values: FormValues) => {
-    // console.log('Form submitted:', values);
     setIsSubmitting(true);
 
     await new Promise((resolve) => setTimeout(resolve, 10000));
