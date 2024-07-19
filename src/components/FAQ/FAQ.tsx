@@ -5,12 +5,8 @@ import Expand_down from '@assets/icons/Expand_down.svg';
 import { issuingData, usingData } from './constants';
 
 const FAQ: React.FC = () => {
-  // const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [openIndex, setOpenIndex] = useState<string | null>(null);
 
-  // const toggleFAQ = (index: number) => {
-  //   setOpenIndex(openIndex === index ? null : index);
-  // };
   const toggleFAQ = (index: string) => {
     setOpenIndex(openIndex === index ? null : index);
   };
