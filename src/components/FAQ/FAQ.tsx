@@ -16,7 +16,7 @@ const FAQ: React.FC = () => {
     <div className='faq'>
       <h2 className='faq__title'>Issuing and receiving a card</h2>
       <div className='faq__block-questions'>
-        {issuingData.map((item, index) => (
+        {issuingData.map((item) => (
           <div key={item.question} className='faq__item'>
             <div className='faq__question' onClick={() => toggleFAQ(item.question)}>
               {item.question}
@@ -35,7 +35,7 @@ const FAQ: React.FC = () => {
 
       <h2 className='faq__title'>Using a credit card</h2>
       <div className='faq__block-questions'>
-        {usingData.map((item, index) => (
+        {usingData.map((item) => (
           <div key={item.question} className='faq__item'>
             <div className='faq__question' onClick={() => toggleFAQ(item.question)}>
               {item.question}
