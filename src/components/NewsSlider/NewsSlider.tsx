@@ -29,7 +29,7 @@ const NewsSlider: React.FC = () => {
         const response = await axios.get<{ articles: Article[] }>(apiUrl);
         const filteredNews = response.data.articles.filter(
           async (article) =>
-            (await checkImageLink(article.urlToImage)) && !article.description.includes('<')
+            (await checkImageLink(article.urlToImage)) && !article.description.includes('<'),
         );
         setNews(filteredNews.slice(0, 20));
       } catch (error) {
@@ -60,7 +60,6 @@ const NewsSlider: React.FC = () => {
     }
   };
 
-  
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prevIndex) => {
@@ -89,28 +88,28 @@ const NewsSlider: React.FC = () => {
     <div className='slider'>
       <div id='slider' className='slider__track' ref={sliderRef}>
         {news.map((article) => (
-          <div key={article.title} className='slider__track__slide'>
+          <div key={article.title} className='slider__slide'>
             <a
               href={article.url}
               target='_blank'
               rel='noopener noreferrer'
-              className='slider__track__slide__link'
+              className='slider__link'
             >
               <img
                 src={article.urlToImage}
                 alt={article.title}
-                className='slider__track__slide__image'
+                className='slider__image'
                 onError={handleImageError}
               />
-              <h3 className='slider__track__slide__title'>{article.title}</h3>
+              <h3 className='slider__title'>{article.title}</h3>
             </a>
-            <p className='slider__track__slide__description'>{article.description}</p>
+            <p className='slider__description'>{article.description}</p>
           </div>
         ))}
       </div>
       <div className='slider__controls'>
         <button
-          className='slider__controls__button'
+          className='slider__button'
           aria-label='Previous slide'
           onClick={handlePrev}
           disabled={currentIndex === 0}
@@ -118,7 +117,7 @@ const NewsSlider: React.FC = () => {
           &lArr;
         </button>
         <button
-          className='slider__controls__button'
+          className='slider__button'
           aria-label='Next slide'
           onClick={handleNext}
           disabled={currentIndex === news.length - 1}

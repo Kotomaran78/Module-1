@@ -14,7 +14,7 @@ const SubscribeSection: React.FC = () => {
   }, []);
 
   const handleSubscribe = async (event: FormEvent) => {
-    event.preventDefault(); 
+    event.preventDefault();
 
     try {
       const response = await fetch('/email', {

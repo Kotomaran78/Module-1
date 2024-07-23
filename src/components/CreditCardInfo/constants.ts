@@ -1,4 +1,3 @@
-
 import AboutCard from '@components/AboutCard';
 import RatesAndConditions from '@components/RatesAndConditions';
 import Cashback from '@components/Cashback';

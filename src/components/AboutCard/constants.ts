@@ -2,7 +2,7 @@ import Money_duotone from '@assets/icons/Money_duotone.svg';
 import Calendar_duotone from '@assets/icons/Calendar_duotone.svg';
 import Clock_duotone from '@assets/icons/Clock_duotone.svg';
 import Bag_duotone from '@assets/icons/Bag_duotone.svg';
-import card_duotone from '@assets/icons/Credit_card_duotone.svg'
+import card_duotone from '@assets/icons/Credit_card_duotone.svg';
 
 export const aboutCardData = [
   {

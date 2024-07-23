@@ -19,7 +19,6 @@ const Header: React.FC = () => {
         </Link>
         <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
           {headerLinks.map((link) => (
-            //onClick={toggleMenu}
             <Link
               key={link.to}
               className={`header__link ${location.pathname === link.to ? 'header__link--active' : ''}`}

@@ -6,7 +6,6 @@ import './ExchangeRates.scss';
 import ExchangeInstance from '@api/instances/ExchangeInstance';
 
 const ExchangeRates: React.FC = () => {
-  
   const [rates, setRates] = useState<Rate[]>([]);
   const [lastChecked, setLastChecked] = useState<string>('');
   const intervalMs = 15 * 1000 * 60;
