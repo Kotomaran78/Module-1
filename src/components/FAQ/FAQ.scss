@@ -5,45 +5,71 @@
     font-size: 30px;
     font-weight: 700;
     margin: 32px 0;
-    color: #000000;
+    color: #000;
   }
 
-  &__block-questions &__item:last-child {
+  &__block-questions &__details:last-child {
     border-bottom: 1px solid #e2e8f0;
   }
 
-  &__item {
+  &__details {
     border: 1px solid #e2e8f0;
     border-bottom: 0;
   }
 
-  &__question {
+  &__summary::-webkit-details-marker {
+    display: none;
+  }
+  &__summary::-moz-list-bullet {
+    list-style-type: none;
+  }
+  &__summary::marker {
+    display: none;
+  }
+  &__summary {
     font-size: 16px;
     font-weight: 500;
     color: #1c1c1e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     padding: 32px;
+    padding-right: 56px;
     cursor: pointer;
+    position: relative;
   }
 
-  &__toggle-icon {
-    font-size: 1rem;
+  &__summary:before {
+    position: absolute;
+    top: 0;
+    right: 32px;
+    content: '';
+    color: transparent;
+    background-image: url('../../assets/icons/Expand_down.svg');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    width: 24px;
+    height: 100%;
+    transition: transform 0.5s;
+  }
+
+  &__details[open] > &__summary:before {
+    transform: scale(1, -1);
   }
 
   &__answer {
     font-size: 16px;
     font-weight: 400;
     color: #7b7454;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-out;
-    padding: 0 32px;
+    padding: 25px 32px;
+    margin: 0;
+    animation: sweep 0.5s ease-in-out;
+  }
+}
 
-    &--open {
-      max-height: 100%;
-      padding: 25px 32px;
-    }
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
