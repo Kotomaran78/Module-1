@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from '../App';
 import Home from '@pages/Home';
 import Loan from '@pages/Loan';
+import NotFound from '@pages/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: 'credit-card',
         element: <Loan />,
+      },
+      {
+        path: '*',
+        element: <NotFound />,
       },
     ],
   },
