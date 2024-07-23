@@ -4,19 +4,19 @@
   margin-top: 50px;
   background: linear-gradient(
       0deg,
-      $color-background-gradient-start,
-      $color-background-gradient-start
+      $color-ExchangeRates-background-gradient-first,
+      $color-ExchangeRates-background-gradient-first
     ),
     linear-gradient(
       358.2deg,
-      $color-background-gradient-end 8.06%,
-      $color-secondary-gradient-end 67.93%
+      $color-ExchangeRates-background-gradient-start 8.06%,
+      $color-ExchangeRates-background-gradient-end 67.93%
     );
   padding: 20px;
   border-radius: 28px;
   box-shadow:
-    0px 2px 4px 0px $color-shadow-main,
-    0px 0px 4px 0px $color-shadow-secondary;
+    0px 2px 4px 0px $color-ExchangeRates-box-shadow-main,
+    0px 0px 4px 0px $color-ExchangeRates-box-shadow-secondary;
 
   &__blockUp,
   &__blockDown {
@@ -37,18 +37,18 @@
   &__title {
     font-size: 1.875rem;
     font-weight: 500;
-    color: $color-title;
+    color: $color-ExchangeRates-title;
   }
 
   &__last-checked {
     font-weight: 400;
-    color: $color-text;
+    color: $color-ExchangeRates-last-checked;
   }
 
   &__currency {
     font-size: 1.25rem;
     font-weight: 500;
-    color: $color-text;
+    color: $color-ExchangeRates-currency;
   }
 
   &__list {
@@ -60,10 +60,10 @@
 
     &__item {
       font-weight: 400;
-      color: $color-text;
+      color: $color-ExchangeRates-list-item;
       padding: 10px;
-      background: $color-background;
-      border: 1px solid $color-border;
+      background: $color-ExchangeRates-list-item-background;
+      border: 1px solid $color-ExchangeRates-list-item-border;
       border-radius: 5px;
       text-align: center;
     }

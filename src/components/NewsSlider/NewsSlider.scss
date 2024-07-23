@@ -4,77 +4,78 @@
   max-width: 100%;
   overflow: hidden;
   margin: 20px 15px 20px 0;
-
   position: relative;
 
   &__track {
     display: flex;
     transition: transform 0.3s ease-in-out;
+  }
 
-    &__slide {
-      min-width: 300px;
-      text-align: center;
-      padding: 20px;
-      background-color: $color-background;
-      margin: 0 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px $color-shadow;
+  &__slide {
+    min-width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: $color-NewsSlider-slide-background;
+    margin: 0 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px $color-NewsSlider-slide-box-shadow;
+  }
 
-      &__link {
-        text-decoration: none;
-        color: inherit;
-      }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
 
-      &__image {
-        width: auto;
-        max-width: 100%;
-        transition: transform 0.5s ease;
-      }
+  &__image {
+    width: auto;
+    max-width: 100%;
+    transition: transform 0.5s ease;
+  }
 
-      &__image:hover {
-        transform: scale(1.02);
-      }
+  &__image:hover {
+    transform: scale(1.02);
+  }
 
-      &__title {
-        font-weight: 500;
-        color: $color-secondary;
-        margin-top: 10px;
-      }
+  &__title {
+    font-weight: 500;
+    color: $color-NewsSlider-title;
+    margin-top: 10px;
+    transition: color 0.3s ease;
 
-      &__title:hover {
-        color: $color-title-hover;
-      }
-
-      &__description {
-        font-weight: 400;
-        color: $color-text;
-      }
+    &:hover {
+      color: $color-NewsSlider-title-hover;
     }
+  }
+
+  &__description {
+    font-weight: 400;
+    color: $color-NewsSlider-description;
   }
 
   &__controls {
     text-align: end;
     margin: 15px 0;
+  }
 
-    &__button {
-      width: 50px;
-      height: 50px;
-      font-size: 1.5rem;
-      background-color: $color-primary-button;
-      color: $text-color-light;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      margin: 0 10px;
+  &__button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: $color-NewsSlider-button-background;
+    color: $color-NewsSlider-button;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
 
-      &:disabled {
-        background-color: $color-disabled;
-        cursor: not-allowed;
-      }
+    &:disabled {
+      background-color: $color-NewsSlider-button-background-disabled;
+      cursor: not-allowed;
+    }
 
-      &:hover:not(:disabled) {
-        background-color: $color-secondary-hover;
-      }
+    &:hover:not(:disabled) {
+      background-color: $color-NewsSlider-button-background-hover;
     }
   }
 }

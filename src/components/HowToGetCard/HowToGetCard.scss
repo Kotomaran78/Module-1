@@ -4,7 +4,7 @@
   &__title {
     font-size: 30px;
     font-weight: 700;
-    color: #000000;
+    color: $color-HowToGetCard-title;
     text-align: center;
   }
   &__steps {
@@ -33,8 +33,8 @@
   &__step-number {
     font-size: 20px;
     font-weight: 700;
-    color: #000000;
-    background: #d9d9d9;
+    color: $color-HowToGetCard-step-number;
+    background: $color-HowToGetCard-step-number-background;
     border-radius: 50%;
     min-width: 48px;
     width: 48px;
@@ -48,14 +48,14 @@
   &__line {
     width: 100%;
     height: 2px;
-    background: #80808033;
+    background: $color-HowToGetCard-line-background;
   }
 
   &__step-description {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
-    color: #000000;
+    color: $color-HowToGetCard-step-description;
   }
 }
 

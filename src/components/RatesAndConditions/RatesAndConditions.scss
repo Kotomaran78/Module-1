@@ -13,13 +13,13 @@
   &__table td {
     font-size: 16px;
     font-weight: 500;
-    color: #434343;
+    color: $color-RatesAndConditions-table-td;
     padding: 25px 0;
     text-align: left;
-    border-bottom: 1px solid #7f92ac;
+    border-bottom: 1px solid $color-RatesAndConditions-table-td-border;
 
     &:first-child {
-      color: #000000;
+      color: $color-RatesAndConditions-table-td-first-child;
       padding-right: 10px;
     }
   }

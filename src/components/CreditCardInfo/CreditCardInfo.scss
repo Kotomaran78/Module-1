@@ -4,14 +4,14 @@
   margin-bottom: 45px;
 
   &__nav {
-    border-bottom: 2px solid #80808033;
+    border-bottom: 2px solid $color-CreditCardInfo-nav-border;
     margin-bottom: 30px;
   }
 
   &__nav-item {
     font-size: 16px;
     font-weight: 500;
-    color: #7b7454;
+    color: $color-CreditCardInfo-nav-item;
 
     padding: 10px 20px;
     cursor: pointer;
@@ -22,11 +22,11 @@
       border-bottom 0.3s;
 
     &--active {
-      border-bottom: 2px solid #7b7454;
+      border-bottom: 2px solid $color-CreditCardInfo-nav-item-border;
     }
 
     &:hover {
-      color: #000;
+      color: $color-CreditCardInfo-nav-item-hover;
     }
   }
 }

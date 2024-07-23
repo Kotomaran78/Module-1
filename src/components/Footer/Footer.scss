@@ -1,7 +1,7 @@
 @import '@styles/variables';
 
 .footer {
-  background: $color-background-footer;
+  background: $color-Footer-background;
   padding: 20px;
   margin-top: 80px;
 
@@ -27,14 +27,14 @@
   &__contact-title {
     font-size: 1.875rem;
     font-weight: 700;
-    color: $color-contact-title;
+    color: $color-Footer-contact-title;
     margin-bottom: 10px;
     text-decoration: none;
   }
 
   &__contact-email {
     font-weight: 500;
-    color: $color-contact-email;
+    color: $color-Footer-contact-email;
     text-decoration: none;
   }
 
@@ -46,20 +46,20 @@
 
   &__link {
     text-decoration: none;
-    color: $color-nav-link;
+    color: $color-Footer-link;
     margin-top: 10px;
     margin-right: 30px;
   }
 
   &__divider {
     border: 0;
-    border-top: 2px solid $color-divider;
+    border-top: 2px solid $color-Footer-divider-border;
     margin-bottom: 20px;
   }
 
   &__cookies {
     font-weight: 500;
-    color: $color-cookies;
+    color: $color-Footer-cookies;
   }
 }
 

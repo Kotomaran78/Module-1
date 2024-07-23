@@ -4,10 +4,10 @@
   display: flex;
   background: linear-gradient(
     180.8deg,
-    rgba(203, 213, 224, 0.624) 34.33%,
-    rgba(254, 235, 200, 0.56) 64.27%
+    $color-CreditCardOffer-background-gradient-start 34.33%,
+    $color-CreditCardOffer-background-gradient-end 64.27%
   );
-  box-shadow: 0px 2px 4px 0px #00000033;
+  box-shadow: 0px 2px 4px 0px $color-CreditCardOffer-box-shadow;
   padding: 20px;
   border-radius: 30px;
   margin-bottom: 45px;
@@ -20,13 +20,13 @@
   &__title {
     font-size: 48px;
     font-weight: 700;
-    color: #ffffff;
+    color: $color-CreditCardOffer-title;
   }
 
   &__description {
     font-size: 16px;
     font-weight: 500;
-    color: #2d3748;
+    color: $color-CreditCardOffer-description;
   }
 
   &__details {
@@ -37,7 +37,7 @@
 
   &__detail {
     margin-right: 10px;
-    color: #3d3d3d;
+    color: $color-CreditCardOffer-detail;
     position: relative;
 
     strong {
@@ -56,8 +56,8 @@
       font-weight: 500;
       position: absolute;
       transform: translateX(-10%) translateY(0);
-      background: #3d3d3d;
-      color: #fff;
+      background: $color-CreditCardOffer-detail-tooltip-background;
+      color: $color-CreditCardOffer-detail-tooltip;
       padding: 0.5rem;
       border-radius: 0.25rem;
       opacity: 0;
@@ -73,8 +73,8 @@
   }
 
   &__apply-button {
-    background: #003cff;
-    color: white;
+    background: $color-CreditCardOffer-apply-button-background;
+    color: $color-CreditCardOffer-apply-button;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -84,7 +84,7 @@
     transition: background 0.3s ease;
 
     &:hover {
-      background: #7796c0;
+      background: $color-CreditCardOffer-apply-button-background-hover;
     }
   }
 
