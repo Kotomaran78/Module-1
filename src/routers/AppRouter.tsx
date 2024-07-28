@@ -4,6 +4,8 @@ import App from '../App';
 import Home from '@pages/Home';
 import Loan from '@pages/Loan';
 import NotFound from '@pages/NotFound';
+import LoanScoring from '@pages/LoanScoring';
+import LoanDocument from '@pages/LoanDocument';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: 'credit-card',
         element: <Loan />,
+      },
+      {
+        path: 'credit-card/:applicationId',
+        element: <LoanScoring />,
+      },
+      {
+        path: 'credit-card/:applicationId/document',
+        element: <LoanDocument />,
       },
       {
         path: '*',
