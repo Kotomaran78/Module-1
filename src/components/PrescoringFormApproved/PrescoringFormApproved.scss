@@ -1,0 +1,21 @@
+@import '@styles/variables';
+
+.prescoring-form-approved {
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #5b35d5;
+  padding: 24px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1c1c1e;
+    margin-top: 0;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4f5665;
+  }
+}
