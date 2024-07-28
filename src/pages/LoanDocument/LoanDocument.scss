@@ -1,0 +1,154 @@
+@import '@styles/variables';
+
+.loan-document {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 16px;
+
+  &__content {
+    background: $color-PrescoringForm-background;
+    padding: 32px;
+    border-radius: 28px;
+    box-shadow: 0 4px 10px $color-PrescoringForm-box-shadow;
+    box-shadow:
+      0px 2px 4px 0px #00000033,
+      0px 0px 8px 0px #00000014;
+  }
+
+  &__header {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 76px;
+  }
+
+  &__header-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $color-PrescoringForm-header-title;
+    margin: 0;
+  }
+
+  &__step-info {
+    font-weight: 500;
+    color: $color-PrescoringForm-step-info;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  &__button-deny {
+    background: #d93737cc;
+    color: #fff;
+    padding: 11px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #ff6161;
+    }
+  }
+
+  &__action-submit {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+  }
+
+  &__button-submit {
+    margin-left: 40px;
+    font-weight: 700;
+    background: $color-PrescoringForm-continue-button-background;
+    color: $color-PrescoringForm-continue-button;
+    padding: 11px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: $color-PrescoringForm-continue-button-background-hover;
+    }
+
+    &:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+  }
+
+  &__step-message {
+    text-align: center;
+
+    & h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #1c1c1e;
+    }
+
+    & p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #4f5665;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .loan-document {
+    font-size: 0.875rem;
+
+    &__header {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__header-title {
+      font-size: 1.65rem;
+    }
+
+    &__button-submit {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .loan-document {
+    font-size: 0.75rem;
+
+    &__header {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    &__header-title {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+    }
+
+    &__actions {
+      justify-content: end;
+    }
+
+    &__button-deny {
+      margin-bottom: 15px;
+    }
+
+    &__button-submit {
+      margin-top: 15px;
+      margin-left: 0;
+    }
+  }
+}
