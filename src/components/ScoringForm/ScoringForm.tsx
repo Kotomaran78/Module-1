@@ -39,7 +39,10 @@ const ScoringForm: React.FC<ScoringFormProps> = ({ handleSubmit }) => {
   };
 
   const handleChangeAndTrigger =
-    (field: { onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void }, name: string) => 
+    (
+      field: { onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void },
+      name: string,
+    ) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
       field.onChange(e);
       trigger(name as keyof FormData);

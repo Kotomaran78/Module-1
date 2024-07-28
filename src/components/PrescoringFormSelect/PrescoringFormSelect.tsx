@@ -1,6 +1,6 @@
 import React from 'react';
 import { PrescoringFormSelectProps } from './types';
-import './PrescoringFormSelect.scss'
+import './PrescoringFormSelect.scss';
 import HappyBox from '@assets/img/HappyBox.png';
 import TrueIcon from '@assets/icons/Check_fill.svg';
 import FalseIcon from '@assets/icons/Close_round_fill.svg';
