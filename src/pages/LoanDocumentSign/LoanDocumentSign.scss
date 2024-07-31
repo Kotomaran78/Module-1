@@ -1,0 +1,159 @@
+@import '@styles/variables';
+
+.loan-document-sign {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+
+  &__header {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__header-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $color-LoanDocument-header-title;
+    margin: 0;
+  }
+
+  &__step-info {
+    font-weight: 500;
+    color: $color-LoanDocument-step-info;
+  }
+
+  &__information {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #4f5665;
+    margin-bottom: 32px;
+  }
+
+  &__pdf-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+
+  &__pdf-img {
+    padding-right: 12px;
+  }
+
+  &__action-submit {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+  }
+
+  &__button-submit {
+    margin-left: 40px;
+    font-weight: 700;
+    color: $color-LoanDocument-button;
+    background: $color-LoanDocument-button-submit-background;
+    padding: 11px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: $color-LoanDocument-button-submit-background-hover;
+    }
+
+    &:disabled {
+      background-color: $color-LoanDocument-button-submit-background-disabled;
+      cursor: not-allowed;
+    }
+  }
+
+  &__step-message {
+    text-align: center;
+
+    & h1 {
+      font-size: 1.875px;
+      font-weight: 700;
+      color: $color-LoanDocument-step-message-h1;
+    }
+
+    & p {
+      font-weight: 500;
+      color: $color-LoanDocument-step-message-p;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .loan-document-sign {
+    font-size: 0.875rem;
+
+    &__header {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__header-title {
+      font-size: 1.65rem;
+    }
+
+    &__button-submit {
+      margin-left: 10px;
+    }
+
+    &__information {
+      font-size: 1.125rem;
+    }
+
+    &__pdf-link {
+      font-size: 1.125rem;
+    }
+
+    &__step-message {
+      & h1 {
+        font-size: 1.65px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .loan-document-sign {
+    font-size: 0.75rem;
+
+    &__header {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &__header-title {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+    }
+
+    &__button-submit {
+      margin-top: 15px;
+    }
+
+    &__information {
+      font-size: 1rem;
+    }
+
+    &__pdf-link {
+      font-size: 1rem;
+    }
+
+    &__step-message {
+      & h1 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
