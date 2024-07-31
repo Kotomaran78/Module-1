@@ -57,34 +57,6 @@
     accent-color: $color-PrescoringForm-slider-accent-color;
   }
 
-  // &__slider::-webkit-slider-thumb {
-  //   -webkit-appearance: none;
-  //   appearance: none;
-  //   width: 24px;
-  //   height: 24px;
-  //   background: $color-PrescoringForm-slider-thumb;
-  //   cursor: pointer;
-  //   border-radius: 50%;
-  //   border: none;
-  // }
-
-  // &__slider::-moz-range-thumb {
-  //   width: 24px;
-  //   height: 24px;
-  //   background: $color-PrescoringForm-slider-thumb;
-  //   cursor: pointer;
-  //   border-radius: 50%;
-  //   border: none;
-  // }
-
-  // &__slider::-webkit-slider-runnable-track {
-  //   background: $color-PrescoringForm-slider-track;
-  // }
-
-  // &__slider::-moz-range-track {
-  //   background: $color-PrescoringForm-slider-track;
-  // }
-
   &__slider-minmax {
     display: flex;
     justify-content: space-between;

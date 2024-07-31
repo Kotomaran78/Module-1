@@ -11,13 +11,13 @@
     & h1 {
       font-size: 30px;
       font-weight: 700;
-      color: #1c1c1e;
+      color: $color-LoanScoring-step-message-h1;
     }
 
     & p {
       font-size: 16px;
       font-weight: 500;
-      color: #4f5665;
+      color: $color-LoanScoring-step-message-p;
     }
   }
 }

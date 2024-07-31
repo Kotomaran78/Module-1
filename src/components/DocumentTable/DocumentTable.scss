@@ -10,24 +10,25 @@
     & th,
     & td {
       padding: 15px 10px 15px 0;
-      border-bottom: 1px solid #e2e8f0;
+      border-bottom: 1px solid $color-DocumentTable-table-border;
       text-align: left;
     }
 
     & td {
       font-size: 12px;
       font-weight: 500;
+      color: $color-DocumentTable-table-td;
     }
 
     & th {
       font-size: 12px;
       font-weight: 500;
-      color: #4a5568;
+      color: $color-DocumentTable-table-th;
       cursor: pointer;
       white-space: nowrap;
 
       &:hover {
-        background-color: #f1f1f1;
+        background-color: $color-DocumentTable-table-th-background-hover;
       }
 
       & .sort-icon {

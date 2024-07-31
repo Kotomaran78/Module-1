@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: $color-DocumentModal-background;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   font-size: 16px;
 
   &__modal {
-    background: #fff;
+    background: $color-DocumentModal-modal-background;
     padding: 20px;
     border-radius: 5px;
     position: relative;
@@ -23,13 +23,13 @@
 
   &__title {
     font-weight: 700;
-    color: #1c1c1e;
+    color: $color-DocumentModal-title;
     margin-top: 0;
   }
 
   &__paragraph {
     font-weight: 500;
-    color: #1a202c;
+    color: $color-DocumentModal-paragraph;
     margin-bottom: 35px;
   }
 
@@ -49,7 +49,7 @@
   &__button-home,
   &__button-deny,
   &__button-cancel {
-    color: #fff;
+    color: $color-DocumentModal-button;
     font-weight: 700;
     border: none;
     border-radius: 8px;
@@ -60,27 +60,27 @@
   }
 
   &__button-home {
-    background: #003cff;
+    background: $color-DocumentModal-button-background;
 
     &:hover {
-      background: $color-PrescoringForm-continue-button-background-hover;
+      background: $color-DocumentModal-button-background-hover;
     }
   }
 
   &__button-deny {
-    background: #d93737cc;
+    background: $color-DocumentModal-button-deny-background;
 
     &:hover {
-      background: #ff6161;
+      background: $color-DocumentModal-button-deny-background-hover;
     }
   }
 
   &__button-cancel {
-    background: #003cff;
+    background: $color-DocumentModal-button-background;
     margin-left: 40px;
 
     &:hover {
-      background: $color-PrescoringForm-continue-button-background-hover;
+      background: $color-DocumentModal-button-background-hover;
     }
   }
 }

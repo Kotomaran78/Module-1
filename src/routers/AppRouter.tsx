@@ -6,6 +6,8 @@ import Loan from '@pages/Loan';
 import NotFound from '@pages/NotFound';
 import LoanScoring from '@pages/LoanScoring';
 import LoanDocument from '@pages/LoanDocument';
+import LoanDocumentSign from '@pages/LoanDocumentSign';
+import LoanDocumentCode from '@pages/LoanDocumentCode';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: 'credit-card/:applicationId/document',
         element: <LoanDocument />,
+      },
+      {
+        path: 'credit-card/:applicationId/document/sign',
+        element: <LoanDocumentSign />,
+      },
+      {
+        path: 'credit-card/:applicationId/document/code',
+        element: <LoanDocumentCode />,
       },
       {
         path: '*',

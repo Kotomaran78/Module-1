@@ -7,13 +7,12 @@
   font-size: 16px;
 
   &__content {
-    background: $color-PrescoringForm-background;
+    background: $color-LoanDocument-background;
     padding: 32px;
     border-radius: 28px;
-    box-shadow: 0 4px 10px $color-PrescoringForm-box-shadow;
     box-shadow:
-      0px 2px 4px 0px #00000033,
-      0px 0px 8px 0px #00000014;
+      0px 2px 4px 0px $color-LoanDocument-box-shadow-first,
+      0px 0px 8px 0px $color-LoanDocument-box-shadow-second;
   }
 
   &__header {
@@ -27,13 +26,13 @@
   &__header-title {
     font-size: 1.875rem;
     font-weight: 700;
-    color: $color-PrescoringForm-header-title;
+    color: $color-LoanDocument-header-title;
     margin: 0;
   }
 
   &__step-info {
     font-weight: 500;
-    color: $color-PrescoringForm-step-info;
+    color: $color-LoanDocument-step-info;
   }
 
   &__actions {
@@ -45,8 +44,8 @@
   }
 
   &__button-deny {
-    background: #d93737cc;
-    color: #fff;
+    color: $color-LoanDocument-button;
+    background: $color-LoanDocument-button-deny-background;
     padding: 11px 28px;
     border: none;
     border-radius: 8px;
@@ -56,7 +55,7 @@
     transition: background 0.3s ease;
 
     &:hover {
-      background: #ff6161;
+      background: $color-LoanDocument-button-deny-background-hover;
     }
   }
 
@@ -70,8 +69,8 @@
   &__button-submit {
     margin-left: 40px;
     font-weight: 700;
-    background: $color-PrescoringForm-continue-button-background;
-    color: $color-PrescoringForm-continue-button;
+    color: $color-LoanDocument-button;
+    background: $color-LoanDocument-button-submit-background;
     padding: 11px 28px;
     border: none;
     border-radius: 8px;
@@ -79,11 +78,11 @@
     transition: background 0.3s ease;
 
     &:hover {
-      background: $color-PrescoringForm-continue-button-background-hover;
+      background: $color-LoanDocument-button-submit-background-hover;
     }
 
     &:disabled {
-      background-color: gray;
+      background-color: $color-LoanDocument-button-submit-background-disabled;
       cursor: not-allowed;
     }
   }
@@ -94,13 +93,13 @@
     & h1 {
       font-size: 30px;
       font-weight: 700;
-      color: #1c1c1e;
+      color: $color-LoanDocument-step-message-h1;
     }
 
     & p {
       font-size: 16px;
       font-weight: 500;
-      color: #4f5665;
+      color: $color-LoanDocument-step-message-p;
     }
   }
 }
@@ -148,7 +147,6 @@
 
     &__button-submit {
       margin-top: 15px;
-      margin-left: 0;
     }
   }
 }
