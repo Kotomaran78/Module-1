@@ -16,7 +16,7 @@
   &__logo {
     font-size: 24px;
     font-weight: 700;
-    color: $color-logo-header;
+    color: $color-Header-logo;
     text-decoration: none;
   }
 
@@ -25,31 +25,54 @@
     justify-content: center;
     flex-grow: 1;
     font-weight: 700;
-    color: $text-color-header;
   }
 
   &__link {
     text-decoration: none;
-    color: $text-color-header;
+    color: $color-Header-link;
     margin: 0 15px;
+    transition: color 0.3s ease;
+
+    &--active {
+      color: $color-Header-link-active;
+    }
+
+    &:hover {
+      color: $color-Header-link-hover;
+    }
   }
 
   &__nav-button {
     display: none;
-  }
-
-  &__button {
-    background-color: $color-primary-button;
-    color: $text-color-light;
+    background-color: $color-Header-button-background;
+    color: $color-Header-button;
     border: none;
     padding: 16px;
     border-radius: 16px;
     cursor: pointer;
     font-weight: 700;
     text-align: center;
+    margin: 10px 0;
+    transition: background 0.3s ease;
 
     &:hover {
-      background-color: $color-secondary-hover;
+      background-color: $color-Header-button-background-hover;
+    }
+  }
+
+  &__button {
+    background-color: $color-Header-button-background;
+    color: $color-Header-button;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: $color-Header-button-background-hover;
     }
   }
 
@@ -68,10 +91,10 @@
       position: absolute;
       top: 50px;
       right: 20px;
-      background-color: white;
+      background-color: $color-Header-nav-background;
       flex-direction: column;
       align-items: center;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 4px 6px $color-Header-nav-box-shadow;
       width: 100%;
       max-width: 200px;
       border-radius: 15px;
@@ -87,19 +110,6 @@
 
     &__nav-button {
       display: block;
-      background-color: $color-primary-button;
-      color: $text-color-light;
-      border: none;
-      padding: 16px;
-      border-radius: 16px;
-      cursor: pointer;
-      font-weight: 700;
-      text-align: center;
-      margin: 10px 0;
-
-      &:hover {
-        background-color: $color-secondary-hover;
-      }
     }
 
     &__button {

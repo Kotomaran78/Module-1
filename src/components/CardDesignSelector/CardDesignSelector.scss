@@ -14,7 +14,7 @@
     font-size: 3rem;
     font-weight: 700;
     text-align: left;
-    color: $color-secondary;
+    color: $color-CardDesignSelector-title;
     margin: 0 0 20px 0;
     width: 100%;
   }
@@ -22,15 +22,16 @@
   &__button {
     padding: 16px;
     border-radius: 16px;
-    background: $color-primary-button;
-    color: $text-color-light;
+    background: $color-CardDesignSelector-button-background;
+    color: $color-CardDesignSelector-button;
     border: none;
     cursor: pointer;
     margin-bottom: 20px;
     font-weight: 700;
+    transition: background-color 0.3s ease ;
 
     &:hover {
-      background-color: $color-secondary-hover;
+      background-color: $color-CardDesignSelector-button-background-hover;
     }
   }
 
@@ -43,6 +44,8 @@
 
   &__cardImage {
     border-radius: 20px;
+    width: 100%;
+    max-width: 45%;
   }
 }
 
@@ -62,8 +65,13 @@
     }
 
     &__cards {
-      justify-content: center;
+      justify-content: space-around;
       margin-top: 20px;
+    }
+
+    &__cardImage {
+      width: 100%;
+      max-width: 250px;
     }
   }
 }

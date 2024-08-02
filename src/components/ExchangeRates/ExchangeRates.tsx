@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { currencies } from './constants';
 import GroupImage from '@assets/img/Group.png';
-import { apiKey } from './apiKey';
 import { Rate } from './types';
 import './ExchangeRates.scss';
+import ExchangeInstance from '@api/instances/ExchangeInstance';
 
 const ExchangeRates: React.FC = () => {
   const [rates, setRates] = useState<Rate[]>([]);
@@ -15,12 +14,8 @@ const ExchangeRates: React.FC = () => {
     try {
       const fetchedRates: Rate[] = [];
       for (const { from, to } of currencies) {
-        const response = await axios.get('https://currency-exchange.p.rapidapi.com/exchange', {
+        const response = await ExchangeInstance.get('/exchange', {
           params: { from, to, q: '1.0' },
-          headers: {
-            'x-rapidapi-key': apiKey,
-            'x-rapidapi-host': 'currency-exchange.p.rapidapi.com',
-          },
         });
         fetchedRates.push({ from, to, rate: parseFloat(response.data) });
       }

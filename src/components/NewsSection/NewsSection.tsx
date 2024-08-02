@@ -1,5 +1,5 @@
 import React from 'react';
-import NewsSlider from './NewsSlider';
+import NewsSlider from '../NewsSlider';
 import './NewsSection.scss';
 
 const NewsSection: React.FC = () => {

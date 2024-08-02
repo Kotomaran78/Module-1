@@ -1,42 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-$font-rubik: 'Rubik', sans-serif;
+@import './fonts';
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-$font-nunito: 'Nunito Sans', sans-serif;
+$color-text-primary: #000;
+$color-text-secondary: #1c1c1e;
+$color-text-tertiary: #4f5665;
+$color-text-highlight: #2d3748;
+$color-text-muted: #7b7454;
+$color-text-error: #ff5631;
 
-$color-secondary: #1c1c1e;
-$color-primary-button: #003cff;
-$color-secondary-hover: #0056b3;
-$text-color-light: #fff;
+$color-background-primary: #fff;
+$color-background-secondary: #eaecee;
+$color-background-tertiary: #7f92acb2;
+$color-background-quaternary: #88b3b899;
+$color-background-gradient-start: #cbd5e09f;
+$color-background-gradient-end: #feebc88f;
+$color-background-nav: #fff;
+$color-background-step-number: #d9d9d9;
+$color-background-disabled: #a8a8a8;
+$color-background-form: #fff;
+$color-background-input: #fff;
+$color-background-input-focus: #f4f4f42c;
 
-$color-background-gradient-start: #f4f4f42c;
-$color-background-gradient-end: #b2b2b270;
-$color-secondary-gradient-end: #b2b2b200;
-$color-shadow-main: #bbbbbb33;
-$color-shadow-secondary: #00000014;
-$color-title: #1c1c1e;
-$color-title-hover: #000000;
-$color-text: #4f5665;
-$color-background: #ffffff;
-$color-border: #e0e0e0;
+$color-button-primary: #fff;
+$color-button-primary-background: #003cff;
+$color-button-primary-background-hover: #7796c0;
+$color-button-secondary-background: #686df1;
+$color-button-error: #ff5631;
 
-$color-features-title: #0b132a;
+$color-heading-primary: #000;
+$color-heading-secondary: #1c1c1e;
+$color-heading-tertiary: #0b132a;
+$color-heading-highlight: #eb801d;
 
-$color-background-footer: #b2b2b24d;
-$color-contact-title: #000000;
-$color-contact-email: #2d3748;
-$color-nav-link: #000000;
-$color-divider: #ffffffcf;
-$color-cookies: #2d3748;
+$color-box-shadow-primary: #00000033;
+$color-box-shadow-secondary: #00000014;
+$color-box-shadow-muted: #bbbbbb33;
+$color-border-primary: #80808033;
+$color-border-secondary: #e2e8f0;
+$color-border-highlight: #5b35d5;
+$color-border-muted: #e0e0e0;
 
-$color-logo-header: #b4387a;
-$text-color-header: #1d1929;
+// @components/AboutCard
+$color-AboutCard-background: $color-background-secondary;
+$color-AboutCard-background-even: $color-background-tertiary;
+$color-AboutCard-box-shadow: $color-box-shadow-primary;
+$color-AboutCard-text: $color-text-primary;
 
-$color-text-primary: #1c1c1c;
-$color-shadow: rgba(0, 0, 0, 0.1);
-$color-disabled: #a8a8a8;
+// @components/CardApplicationForm
+$color-CardApplicationForm-background: $color-background-primary;
+$color-CardApplicationForm-box-shadow: $color-box-shadow-primary;
+$color-CardApplicationForm-header-title: $color-text-primary;
+$color-CardApplicationForm-step-info: $color-text-primary;
+$color-CardApplicationForm-section-slider-border: $color-border-highlight;
+$color-CardApplicationForm-slider-title: $color-text-primary;
+$color-CardApplicationForm-amount-value: $color-text-primary;
+$color-CardApplicationForm-slider-accent-color: $color-border-highlight;
+$color-CardApplicationForm-slider-min: $color-text-muted;
+$color-CardApplicationForm-slider-max: $color-text-muted;
+$color-CardApplicationForm-error: $color-text-error;
+$color-CardApplicationForm-divider-border: $color-border-primary;
+$color-CardApplicationForm-amount-title: $color-text-primary;
+$color-CardApplicationForm-amount-selected: $color-text-primary;
+$color-CardApplicationForm-amount-selected-border: $color-border-primary;
+$color-CardApplicationForm-form-title: $color-text-primary;
+$color-CardApplicationForm-label: $color-text-secondary;
+$color-CardApplicationForm-input-border: $color-border-primary;
+$color-CardApplicationForm-input-border-focus: $color-border-highlight;
+$color-CardApplicationForm-input-border-error: $color-text-error;
+$color-CardApplicationForm-continue-button: $color-button-primary;
+$color-CardApplicationForm-continue-button-background: $color-button-primary-background;
+$color-CardApplicationForm-continue-button-background-hover: $color-button-primary-background-hover;
 
-$color-accent: #eb801d;
-$color-placeholder: #9092b0;
-$color-secondary-button: #686df1;
-$color-secondary-hover: #0056b3;
+// @components/CardDesignSelector
+$color-CardDesignSelector-title: $color-text-secondary;
+$color-CardDesignSelector-button: $color-button-primary;
+$color-CardDesignSelector-button-background: $color-button-primary-background;
+$color-CardDesignSelector-button-background-hover: $color-button-primary-background-hover;
+
+// @components/Cashback
+$color-Cashback-item-background: $color-background-secondary;
+$color-Cashback-item-box-shadow: $color-box-shadow-primary;
+$color-Cashback-item-paragraph: #434343e5;
+$color-Cashback-item-paragraph-strong: $color-text-primary;
+$color-Cashback-item-background-even: $color-background-quaternary;
+
+// @components/CreditCardInfo
+$color-CreditCardInfo-nav-border: $color-border-primary;
+$color-CreditCardInfo-nav-item: $color-text-muted;
+$color-CreditCardInfo-nav-item-border: $color-text-muted;
+$color-CreditCardInfo-nav-item-hover: $color-text-primary;
+
+// @components/CreditCardOffer
+$color-CreditCardOffer-background-gradient-start: $color-background-gradient-start;
+$color-CreditCardOffer-background-gradient-end: $color-background-gradient-end;
+$color-CreditCardOffer-box-shadow: $color-box-shadow-primary;
+$color-CreditCardOffer-title: $color-button-primary;
+$color-CreditCardOffer-description: $color-text-highlight;
+$color-CreditCardOffer-detail: #3d3d3d;
+$color-CreditCardOffer-detail-tooltip: $color-button-primary;
+$color-CreditCardOffer-detail-tooltip-background: #3d3d3d;
+$color-CreditCardOffer-apply-button: $color-button-primary;
+$color-CreditCardOffer-apply-button-background: $color-button-primary-background;
+$color-CreditCardOffer-apply-button-background-hover: $color-button-primary-background-hover;
+
+// @components/ErrorPage404
+$color-ErrorPage404-subtitle: $color-text-secondary;
+$color-ErrorPage404-title: $color-text-primary;
+$color-ErrorPage404-paragraph: #4b4b4b;
+$color-ErrorPage404-button: $color-button-primary;
+$color-ErrorPage404-button-background: $color-button-primary-background;
+$color-ErrorPage404-button-background-hover: $color-button-primary-background-hover;
+
+// @components/ExchangeRates
+$color-ExchangeRates-background-gradient-first: $color-background-input-focus;
+$color-ExchangeRates-background-gradient-start: #b2b2b2cc;
+$color-ExchangeRates-background-gradient-end: #b2b2b200;
+$color-ExchangeRates-box-shadow-main: $color-box-shadow-muted;
+$color-ExchangeRates-box-shadow-secondary: $color-box-shadow-secondary;
+$color-ExchangeRates-title: $color-text-secondary;
+$color-ExchangeRates-last-checked: $color-text-tertiary;
+$color-ExchangeRates-currency: $color-text-tertiary;
+$color-ExchangeRates-list-item: $color-text-tertiary;
+$color-ExchangeRates-list-item-background: $color-background-primary;
+$color-ExchangeRates-list-item-border: $color-border-muted;
+
+// @components/FAQ
+$color-FAQ-title: $color-text-primary;
+$color-FAQ-details-border: $color-border-secondary;
+$color-FAQ-summary: $color-text-secondary;
+$color-FAQ-answer: $color-text-muted;
+
+// @components/FeatureSection
+$color-FeatureSection-title: $color-heading-tertiary;
+$color-FeatureSection-description: $color-text-tertiary;
+$color-FeatureSection-list-item: $color-text-tertiary;
+
+// @components/Footer
+$color-Footer-background: #b2b2b24d;
+$color-Footer-contact-title: $color-text-primary;
+$color-Footer-contact-email: $color-text-highlight;
+$color-Footer-link: $color-text-primary;
+$color-Footer-divider-border: #ffffffcf;
+$color-Footer-cookies: $color-text-highlight;
+
+// @components/GlobalUsageSection
+$color-GlobalUsageSection-title: $color-text-secondary;
+$color-GlobalUsageSection-text: $color-text-secondary;
+
+// @components/Header
+$color-Header-logo: #b4387a;
+$color-Header-link: #1d1929;
+$color-Header-link-active: #b2a35f;
+$color-Header-link-hover: $color-text-muted;
+$color-Header-button: $color-button-primary;
+$color-Header-button-background: $color-button-primary-background;
+$color-Header-button-background-hover: $color-button-primary-background-hover;
+$color-Header-nav-background: $color-background-nav;
+$color-Header-nav-box-shadow: $color-box-shadow-primary;
+
+// @components/HowToGetCard
+$color-HowToGetCard-title: $color-text-primary;
+$color-HowToGetCard-step-number: $color-text-primary;
+$color-HowToGetCard-step-number-background: $color-background-step-number;
+$color-HowToGetCard-line-background: $color-border-primary;
+$color-HowToGetCard-step-description: $color-text-primary;
+
+// @components/NewsSection
+$color-NewsSection-title: $color-text-secondary;
+$color-NewsSection-text: $color-text-secondary;
+
+// @components/NewsSlider
+$color-NewsSlider-slide-background: $color-background-primary;
+$color-NewsSlider-slide-box-shadow: $color-box-shadow-primary;
+$color-NewsSlider-title: $color-text-secondary;
+$color-NewsSlider-title-hover: $color-text-primary;
+$color-NewsSlider-description: $color-text-tertiary;
+$color-NewsSlider-button: $color-button-primary;
+$color-NewsSlider-button-background: $color-button-primary-background;
+$color-NewsSlider-button-background-disabled: $color-background-disabled;
+$color-NewsSlider-button-background-hover: $color-button-primary-background-hover;
+
+// @components/RatesAndConditions
+$color-RatesAndConditions-table-td: #434343;
+$color-RatesAndConditions-table-td-border: #7f92ac;
+$color-RatesAndConditions-table-td-first-child: $color-text-primary;
+
+// @components/SubscribeSection
+$color-SubscribeSection-title1: $color-heading-highlight;
+$color-SubscribeSection-title2: $color-text-secondary;
+$color-SubscribeSection-title3: $color-text-secondary;
+$color-SubscribeSection-form-background: $color-background-form;
+$color-SubscribeSection-form-box-shadow: $color-box-shadow-primary;
+$color-SubscribeSection-input: $color-text-secondary;
+$color-SubscribeSection-input-background: $color-background-input;
+$color-SubscribeSection-input-placeholder: #9092b0;
+$color-SubscribeSection-button: $color-button-primary;
+$color-SubscribeSection-button-background: $color-button-secondary-background;
+$color-SubscribeSection-button-background-hover: $color-button-primary-background-hover;
