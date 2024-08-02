@@ -1,0 +1,109 @@
+@import '@styles/variables';
+
+.loan-document-code {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+
+  // &__header {
+  //   max-width: 50%;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   margin-bottom: 32px;
+  // }
+
+  &__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $color-LoanDocument-header-title;
+    margin: 0;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  &__input-codes {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  &__input {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+    background: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: 0.5px solid #808080;
+    padding: 0;
+
+    &:focus-visible,
+    &:focus {
+      border: 1px solid #3182ce;
+    }
+
+    &::placeholder {
+      color: #808080;
+    }
+  }
+
+  &__error {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #ff5631;
+  }
+
+  &__step-message {
+    text-align: center;
+
+    & h1 {
+      font-size: 1.875px;
+      font-weight: 700;
+      color: $color-LoanDocument-step-message-h1;
+    }
+
+    & p {
+      font-weight: 500;
+      color: $color-LoanDocument-step-message-p;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .loan-document-sign {
+    font-size: 0.875rem;
+
+    &__title {
+      font-size: 1.65rem;
+      margin-bottom: 20px;
+    }
+
+    &__step-message {
+      & h1 {
+        font-size: 1.65px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .loan-document-sign {
+    font-size: 0.75rem;
+
+    &__title {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    &__step-message {
+      & h1 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

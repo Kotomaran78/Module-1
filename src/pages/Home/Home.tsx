@@ -9,7 +9,7 @@ import SubscribeSection from '@components/SubscribeSection';
 
 const Home: React.FC = () => {
   return (
-    <section className='home__content'>
+    <section className='home'>
       <CardDesignSelector />
       <FeatureSection />
       <ExchangeRates />

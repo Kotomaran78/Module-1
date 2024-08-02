@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './CreditCardOffer.scss';
 import cardImage1 from '@assets/img/cardImage1.png';
 
 const CreditCardOffer: React.FC = () => {
+  const [status, setStatus] = useState<string | null>(localStorage.getItem('status'));
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setStatus(localStorage.getItem('status'));
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
+
+  const getButtonText = (status: string | null) => {
+    switch (status) {
+      case 'PREAPPROVAL':
+        return 'Choose an offer';
+      case 'APPROVED':
+        return 'Continue registration';
+      default:
+        return 'Apply for card';
+    }
+  };
+
   return (
     <section className='credit-card-offer'>
       <div className='credit-card-offer___info'>
@@ -37,7 +62,7 @@ const CreditCardOffer: React.FC = () => {
             </div>
           </div>
         </div>
-        <button className='credit-card-offer__apply-button'>Apply for card</button>
+        <button className='credit-card-offer__apply-button'>{getButtonText(status)}</button>
       </div>
       <div className='credit-card-offer__image-display2 credit-card-offer__image'>
         <img src={cardImage1} alt='Credit Card' className='credit-card-offer__image-img' />

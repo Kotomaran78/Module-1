@@ -1,0 +1,61 @@
+@import '@styles/variables';
+
+.document-table {
+  overflow-x: auto;
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    & th,
+    & td {
+      padding: 15px 10px 15px 0;
+      border-bottom: 1px solid $color-DocumentTable-table-border;
+      text-align: left;
+    }
+
+    & td {
+      font-size: 12px;
+      font-weight: 500;
+      color: $color-DocumentTable-table-td;
+    }
+
+    & th {
+      font-size: 12px;
+      font-weight: 500;
+      color: $color-DocumentTable-table-th;
+      cursor: pointer;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: $color-DocumentTable-table-th-background-hover;
+      }
+
+      & .sort-icon {
+        display: inline-flex;
+        margin-left: 8px;
+        transition: transform 0.3s;
+      }
+
+      & .sort-icon.ascending {
+        transform: rotateX(0deg);
+      }
+
+      & .sort-icon.descending {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .document-table {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .document-table {
+    font-size: 0.75rem;
+  }
+}

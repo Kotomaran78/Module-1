@@ -4,7 +4,7 @@ import ErrorPage404 from '@components/ErrorPage404';
 
 const NotFound: React.FC = () => {
   return (
-    <section className='NotFound__content'>
+    <section className='NotFound'>
       <ErrorPage404 />
     </section>
   );

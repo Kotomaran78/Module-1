@@ -2,6 +2,7 @@
 
 $color-text-primary: #000;
 $color-text-secondary: #1c1c1e;
+$color-text-document: #1a202c;
 $color-text-tertiary: #4f5665;
 $color-text-highlight: #2d3748;
 $color-text-muted: #7b7454;
@@ -23,6 +24,8 @@ $color-background-input-focus: #f4f4f42c;
 $color-button-primary: #fff;
 $color-button-primary-background: #003cff;
 $color-button-primary-background-hover: #7796c0;
+$color-button-deny-background: #d93737cc;
+$color-button-deny-background-hover: #ff6161;
 $color-button-secondary-background: #686df1;
 $color-button-error: #ff5631;
 
@@ -45,30 +48,30 @@ $color-AboutCard-background-even: $color-background-tertiary;
 $color-AboutCard-box-shadow: $color-box-shadow-primary;
 $color-AboutCard-text: $color-text-primary;
 
-// @components/CardApplicationForm
-$color-CardApplicationForm-background: $color-background-primary;
-$color-CardApplicationForm-box-shadow: $color-box-shadow-primary;
-$color-CardApplicationForm-header-title: $color-text-primary;
-$color-CardApplicationForm-step-info: $color-text-primary;
-$color-CardApplicationForm-section-slider-border: $color-border-highlight;
-$color-CardApplicationForm-slider-title: $color-text-primary;
-$color-CardApplicationForm-amount-value: $color-text-primary;
-$color-CardApplicationForm-slider-accent-color: $color-border-highlight;
-$color-CardApplicationForm-slider-min: $color-text-muted;
-$color-CardApplicationForm-slider-max: $color-text-muted;
-$color-CardApplicationForm-error: $color-text-error;
-$color-CardApplicationForm-divider-border: $color-border-primary;
-$color-CardApplicationForm-amount-title: $color-text-primary;
-$color-CardApplicationForm-amount-selected: $color-text-primary;
-$color-CardApplicationForm-amount-selected-border: $color-border-primary;
-$color-CardApplicationForm-form-title: $color-text-primary;
-$color-CardApplicationForm-label: $color-text-secondary;
-$color-CardApplicationForm-input-border: $color-border-primary;
-$color-CardApplicationForm-input-border-focus: $color-border-highlight;
-$color-CardApplicationForm-input-border-error: $color-text-error;
-$color-CardApplicationForm-continue-button: $color-button-primary;
-$color-CardApplicationForm-continue-button-background: $color-button-primary-background;
-$color-CardApplicationForm-continue-button-background-hover: $color-button-primary-background-hover;
+// @components/PrescoringForm
+$color-PrescoringForm-background: $color-background-primary;
+$color-PrescoringForm-box-shadow: $color-box-shadow-primary;
+$color-PrescoringForm-header-title: $color-text-primary;
+$color-PrescoringForm-step-info: $color-text-primary;
+$color-PrescoringForm-section-slider-border: $color-border-highlight;
+$color-PrescoringForm-slider-title: $color-text-primary;
+$color-PrescoringForm-amount-value: $color-text-primary;
+$color-PrescoringForm-slider-accent-color: $color-border-highlight;
+$color-PrescoringForm-slider-min: $color-text-muted;
+$color-PrescoringForm-slider-max: $color-text-muted;
+$color-PrescoringForm-error: $color-text-error;
+$color-PrescoringForm-divider-border: $color-border-primary;
+$color-PrescoringForm-amount-title: $color-text-primary;
+$color-PrescoringForm-amount-selected: $color-text-primary;
+$color-PrescoringForm-amount-selected-border: $color-border-primary;
+$color-PrescoringForm-form-title: $color-text-primary;
+$color-PrescoringForm-label: $color-text-secondary;
+$color-PrescoringForm-input-border: $color-border-primary;
+$color-PrescoringForm-input-border-focus: $color-border-highlight;
+$color-PrescoringForm-input-border-error: $color-text-error;
+$color-PrescoringForm-continue-button: $color-button-primary;
+$color-PrescoringForm-continue-button-background: $color-button-primary-background;
+$color-PrescoringForm-continue-button-background-hover: $color-button-primary-background-hover;
 
 // @components/CardDesignSelector
 $color-CardDesignSelector-title: $color-text-secondary;
@@ -196,3 +199,70 @@ $color-SubscribeSection-input-placeholder: #9092b0;
 $color-SubscribeSection-button: $color-button-primary;
 $color-SubscribeSection-button-background: $color-button-secondary-background;
 $color-SubscribeSection-button-background-hover: $color-button-primary-background-hover;
+
+// @components/DocumentModal
+$color-DocumentModal-background: $color-box-shadow-primary;
+$color-DocumentModal-modal-background: $color-background-primary;
+$color-DocumentModal-title: $color-text-secondary;
+$color-DocumentModal-paragraph: $color-text-document;
+$color-DocumentModal-button: $color-button-primary;
+$color-DocumentModal-button-background: $color-button-primary-background;
+$color-DocumentModal-button-background-hover: $color-button-primary-background-hover;
+$color-DocumentModal-button-deny-background: $color-button-deny-background;
+$color-DocumentModal-button-deny-background-hover: $color-button-deny-background-hover;
+
+// @components/DocumentTable
+$color-DocumentTable-table-border: $color-border-secondary;
+$color-DocumentTable-table-td: $color-text-document;
+$color-DocumentTable-table-th: #4a5568;
+$color-DocumentTable-table-th-background-hover: $color-background-secondary;
+
+// @components/PrescoringFormApproved
+$color-PrescoringFormApproved-border: $color-border-highlight;
+$color-PrescoringFormApproved-title: $color-heading-secondary;
+$color-PrescoringFormApproved-paragraph: $color-text-tertiary;
+
+// @components/PrescoringFormSelect
+$color-PrescoringFormSelect-card: $color-text-secondary;
+$color-PrescoringFormSelect-card-background: $color-background-primary;
+$color-PrescoringFormSelect-card-box-shadow-first: $color-box-shadow-primary;
+$color-PrescoringFormSelect-card-box-shadow-second: $color-box-shadow-secondary;
+$color-PrescoringFormSelect-button: $color-button-primary;
+$color-PrescoringFormSelect-button-background: $color-button-primary-background;
+$color-PrescoringFormSelect-button-background-hover: $color-button-primary-background-hover;
+
+// @components/ScoringForm
+$color-ScoringForm-background: $color-background-primary;
+$color-ScoringForm-box-shadow-first: $color-box-shadow-primary;
+$color-ScoringForm-box-shadow-second: $color-box-shadow-secondary;
+$color-ScoringForm-header-title: $color-text-primary;
+$color-ScoringForm-step-info: $color-text-primary;
+$color-ScoringForm-subtitle: $color-heading-primary;
+$color-ScoringForm-error: $color-text-error;
+$color-ScoringForm-label: $color-text-secondary;
+$color-ScoringForm-input-background: #f9f5e3;
+$color-ScoringForm-input-border: $color-border-primary;
+$color-ScoringForm-input-border-focus: $color-border-highlight;
+$color-ScoringForm-input-border-error: $color-text-error;
+$color-ScoringForm-continue-button: $color-button-primary;
+$color-ScoringForm-continue-button-background: $color-button-primary-background;
+$color-ScoringForm-continue-button-background-hover: $color-button-primary-background-hover;
+
+// @pages/LoanDocument
+$color-LoanDocument-background: $color-background-primary;
+$color-LoanDocument-box-shadow-first: $color-box-shadow-primary;
+$color-LoanDocument-box-shadow-second: $color-box-shadow-secondary;
+$color-LoanDocument-header-title: $color-text-primary;
+$color-LoanDocument-step-info: $color-text-primary;
+$color-LoanDocument-button: $color-button-primary;
+$color-LoanDocument-button-deny-background: $color-button-deny-background;
+$color-LoanDocument-button-deny-background-hover: $color-button-deny-background-hover;
+$color-LoanDocument-button-submit-background: $color-button-primary-background;
+$color-LoanDocument-button-submit-background-hover: $color-button-primary-background-hover;
+$color-LoanDocument-button-submit-background-disabled: $color-background-disabled;
+$color-LoanDocument-step-message-h1: $color-heading-secondary;
+$color-LoanDocument-step-message-p: $color-text-tertiary;
+
+// @pages/LoanScoring
+$color-LoanScoring-step-message-h1: $color-heading-secondary;
+$color-LoanScoring-step-message-p: $color-text-tertiary;

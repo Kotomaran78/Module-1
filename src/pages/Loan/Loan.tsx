@@ -6,7 +6,7 @@ import CreditCardInfo from '@components/CreditCardInfo';
 
 const Loan: React.FC = () => {
   return (
-    <section className='loan__content'>
+    <section className='loan'>
       <CreditCardOffer />
       <CreditCardInfo />
       <HowToGetCard />

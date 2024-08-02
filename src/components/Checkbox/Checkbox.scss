@@ -1,0 +1,13 @@
+@import '@styles/variables';
+
+.checkbox {
+  &__label {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1a202c;
+  }
+
+  &__input {
+    margin-right: 14px;
+  }
+}
